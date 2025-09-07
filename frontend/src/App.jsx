@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './components/pages/Login'
 import Register from './components/pages/Register'
 import Home from './components/pages/Home'
+import Dashboard from './components/pages/Dashboard'
 import './App.css'
 
 // Protected Route component
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route 
             path="/home" 
             element={

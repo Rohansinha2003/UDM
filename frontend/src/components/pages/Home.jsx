@@ -87,7 +87,7 @@ const Home = () => {
             <div className="card-icon">📊</div>
             <h3>Dashboard</h3>
             <p>View your procurement dashboard and statistics</p>
-            <button className="card-button">View Dashboard</button>
+            <button className="card-button"onClick={() => navigate("/dashboard")} >View Dashboard</button>
           </div>
 
           <div className="dashboard-card">
