@@ -1,0 +1,479 @@
+/* IREPS Government Portal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.ireps-container {
+  min-height: 100vh;
+  height: 100vh;
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+.ireps-header {
+  background: #1e3a8a;
+  color: white;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #1e3a8a;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.emblem-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.emblem {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.logo-section {
+  display: flex;
+  gap: 30px;
+}
+
+.gem-logo, .ireps-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gem-logo-img {
+  height: 40px;
+  width: auto;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+
+.gem-text, .ireps-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+.gem-subtitle, .ireps-subtitle {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.gem-tagline {
+  font-size: 10px;
+  color: #93c5fd;
+  margin-top: 2px;
+}
+
+.header-center {
+  text-align: center;
+  flex: 1;
+}
+
+.header-center h1 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.header-center h2 {
+  font-size: 16px;
+  margin: 2px 0;
+  font-weight: normal;
+}
+
+.header-center h3 {
+  font-size: 14px;
+  margin: 2px 0;
+  color: #93c5fd;
+  font-weight: normal;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.accessibility-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.font-size {
+  background: #374151;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.font-size.active {
+  background: #fbbf24;
+  color: #1e3a8a;
+}
+
+.theme-toggle {
+  display: flex;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.moon, .sun {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header-nav {
+  background: #1e40af;
+  padding: 8px 20px;
+  border-top: 1px solid #3b82f6;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.home-icon {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Main Content */
+.ireps-main {
+  flex: 1;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+}
+
+.login-card {
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.login-header h1 {
+  color: #1f2937;
+  font-size: 24px;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.login-header p {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0 0 15px 0;
+}
+
+.test-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.test-label {
+  background: #dc2626;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.new-tag {
+  background: #fbbf24;
+  color: #1e3a8a;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.login-form {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #374151;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.form-group input.error {
+  border-color: #dc2626;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.general-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 15px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.login-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  flex: 1;
+}
+
+.login-button:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.login-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.home-button {
+  background: white;
+  color: #f59e0b;
+  border: 2px solid #f59e0b;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  flex: 1;
+}
+
+.home-button:hover {
+  background: #f59e0b;
+  color: white;
+}
+
+.security-notes {
+  margin-top: 15px;
+}
+
+.case-sensitive {
+  color: #dc2626;
+  font-size: 12px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.ip-logged {
+  color: #374151;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/* Additional Options */
+.additional-options {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.option-left, .option-right {
+  flex: 1;
+}
+
+.option-left h4, .option-right h4 {
+  color: #374151;
+  font-size: 14px;
+  margin: 0 0 8px 0;
+  font-weight: bold;
+}
+
+.option-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+
+.option-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.ireps-footer {
+  background: #1e3a8a;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .logo-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .additional-options {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .footer-right {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .form-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .ireps-main {
+    padding: 15px;
+  }
+  
+  .login-card {
+    padding: 20px;
+  }
+  
+  .header-center h1 {
+    font-size: 16px;
+  }
+  
+  .header-center h2 {
+    font-size: 14px;
+  }
+  
+  .header-center h3 {
+    font-size: 12px;
+  }
+}
+
+/* Form Select Styles */
+.form-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.form-select:disabled {
+  background: #f7fafc;
+  color: #a0aec0;
+  cursor: not-allowed;
+}
