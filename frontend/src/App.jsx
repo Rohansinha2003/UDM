@@ -3,6 +3,8 @@ import Login from './components/pages/Login'
 import Register from './components/pages/Register'
 import Home from './components/pages/Home'
 import Dashboard from './components/pages/Dashboard'
+import ProductDetails from './components/pages/ProductDetails'
+import AddEntries from './components/pages/AddEntries'
 import './App.css'
 
 // Protected Route component
@@ -19,6 +21,22 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route 
+            path="/product-details" 
+            element={
+              <ProtectedRoute>
+                <ProductDetails />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/add-entries" 
+            element={
+              <ProtectedRoute>
+                <AddEntries />
+              </ProtectedRoute>
+            } 
+          />
           <Route 
             path="/home" 
             element={

@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth');
+const productRoutes = require('./routes/products');
+const entryRoutes = require('./routes/entries');
 
 dotenv.config();
 const app = express();
@@ -43,6 +45,8 @@ mongoose.connect(process.env.MONGODB_URI)
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/entries', entryRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
